@@ -24,70 +24,66 @@
     </div>
 </div>    
 
-    <h3>Update Course</h3>
-    
+<div class="w-full bg-white pt-2">
+    <div class="bg-teal-50 w-5/12 mb-20 ml-[450px] pb-12 pt-4  shadow-lg shadow-teal-950">
 
-    
+       <h3 class="text-center text-purple-800 text-2xl mt-16 font-bold">Update Course</h3>
+     <br>
 
-        
-           Course Name
-        
+    <form action="">
 
-       
-         
-            <input type="text" value="S122">
-        
+        <div class="ml-[220px]">
+          <div class="text-xl font-bold">    
+            Course Name
+          </div>
+          
+          <div>
+            <input type="text" value="S122" class="w-64 ring-1 ring-red-600" required>
+          </div>
+
+
+          <div class="text-xl font-bold">
             Course Type
+          </div>
 
-
-         
-
-         
-            
-            <select name="Type" required>
+          <div>
+            <select name="Type" class="w-64 ring-1 ring-red-600" required>
                 <option value="Hybrid">Hybrid</option>
                 <option value="Remote">Remote</option>
 
             </select>
-            
+        </div>  
 
-            
-
-         
+         <div class="text-xl font-bold">  
            Description
+        </div> 
 
-         
+        <div>
+          <textarea rows="3" cols="3" class="w-64 ring-1 ring-red-600" placeholder="11q" required></textarea>
+        </div>
+        
 
-         
 
-          
-          11q
-           
-          
+        <div  class="text-xl font-bold">
+           Price
+        </div>
 
-         
-            <th>Price</th>
-          </tr>
-
-          <tr>
-
-            <td>
-                <select name="Price">
+            <div>
+                <select name="Price" class="w-64 ring-1 ring-red-600" required>
                     <option value="15000">Rs.15000</option>
                     <option value="25000">Rs25000</option>
                 </select>
-            </td>
-          </tr>
+             </div>
+         </div>    
+        <br>
+            <div class="ml-[200px]">
+                <input type="submit" value="Update Course" class="w-80 h-8 font-bold rounded-xl bg-purple-600 w-28  text-white hover:bg-lime-400 hover:text-blue-900">
+            </div>
+    </form>      
 
+</div>
 
-          <tr>
-
-            <td>
-                <input type="submit" value="Update Course">
-            </td>
-          </tr>
-
-    </table>
+   
     
 </body>
 </html>
