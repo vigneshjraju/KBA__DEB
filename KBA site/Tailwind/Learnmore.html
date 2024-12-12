@@ -4,54 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn more</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
  
 <body class="bg-gray-100">
 
-    <img src="kba.jpeg" alt="Course Thumbnail" height="100" width="110">
+   <div class="flex bg-purple-200 w-full">
+      <div class="w-8/12">
+         <img src="kba.jpeg" alt="Course Thumbnail" class="w-24">
+      </div>
 
-    <center>
-    <a href="Home.html"> Home|</a>
-    <a href="courses.html"> Courses|</a>
-    <a href="Contact us.html">Contact us|</a>
-    <a href="Add course.html"> Add course|</a>
-    <a href="login.html"> Logout</a>
+      <div class="mt-8 flex flex gap-x-8 text-stone-800 ">
 
-    <p> Back to course</p>  
+         <a href="Home.html" class="hover:text-blue-900"> Home</a>
+         <a href="courses.html" class="hover:text-blue-900"> Courses</a>
+         <a href="Contact us.html" class="hover:text-blue-900">Contact us</a>
+         <a href="Add course.html" class="hover:text-blue-900"> Add course</a>
+         <a href="login.html" class="hover:text-blue-900"> Logout</a>
+      </div>
+  </div>
 
-    <img src="15.png" alt="course thumbnail" height="150" width="350">
+  <p class="ml-80 mt-16"> Back to course</p>
+  <div class="bg-purple-200  w-[750px] ml-80 mt-15  pt-7 pl-12 pb-7 shadow-lg shadow-teal-950"> 
+     
+
+    <img src="15.png" alt="course thumbnail" class="w-80">
     
-    <h3 =""> S122 <left><br> RS.15000  </left></h3>
+    <div class="flex gap-x-[350px]">
+      <div>
+         <h3 class="font-bold text-2xl">S122</h3>
+      </div>
 
-    <a href="Add to Cart"> Add to Cart</a> 
+      <div class="flex gap-x-8">
+         <h3 class="text-red-600 font-bold text-2xl">RS.15000</h3>
+         <a href="Add to Cart"> <input type="button" class="bg-purple-600 font-bold text-white text-xl w-32 h-8" value="Add to Cart"> </a> 
+      </div>
+   </div>
 
-    <h4> Description</h4>
+    <h4 class="text-xl font-bold"> Description</h4>
 
     <p> 11q</p>
+    <br>
 
-    <h4> Prerequisites</h4>
+    <h4 class="text-xl font-bold"> Prerequisites</h4>
 
-     <p> 
-        1.  Basic Understanding of Blockchain Technology.
-        <br>
-        2.  Familiarity with programming language.
-        <br>
-        3.  Internet access
-     </p>
+      <ul class="list-disc" >
+        <li>Basic Understanding of Blockchain Technology.</li>
+        <li>Familiarity with programming language.</li>
+        <li>Internet access.</li>
+      </ul>
 
-     <h4> Features</h4>
+     <h4 class="text-xl font-bold"> Features</h4>
 
-     <p> 
-        1.  40 Hours of Content 
-        <br>
-        2.  Certificate of Completion
-        <br>
-        3.  Access to Community Forum
-        <br>
-        4.  Downloadable Resources
-        <br>
-        5.   24/7 Support
-     </p>
+     <ul class="list-disc" >
+      <li>40 Hours of Content. </li>
+      <li>Certificate of Completion.</li>
+      <li>Access to Community Forum.</li>
+      <li>Downloadable Resources</li>
+      <li>24/7 Support</li>
+    </ul>
+
+     
+      
+     
+   </div>
+
 
      <a href="Edit Course"> Edit Course </a>
      <br>
