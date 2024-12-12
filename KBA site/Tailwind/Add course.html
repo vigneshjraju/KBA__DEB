@@ -39,60 +39,60 @@
     <h3 class="text-center text-purple-800 text-2xl mt-16 font-bold">
         Add Course
     </h3>
-    <form action="" class="ml-16 pt-7 pl-48 text-xl font-bold">
+    <form action="" class="ml-36 pt-7 pl-48 font-bold">
         
-           <div> 
+           <div class="text-xl"> 
             Course Name:
             </div>
             
             
             <div>
-          <input type="text"  class="w-80" placeholder="eg:Certified Blockchain Associate" required> 
+          <input type="text"  class="w-80 ring-1 ring-red-600" placeholder="eg:Certified Blockchain Associate" required> 
         </div>
          
 <br>
-         <div>
+         <div class="text-xl">
             Course Id:
         </div>   
    
-                <input type="text" placeholder="eg.1" class="w-80"required >
+                <input type="text" placeholder="eg.1" class="w-80 ring-1 ring-red-600"required >
        
        <div>
         <br>
-        <div>
+        <div class="text-xl">
            Course Type:
         </div>
         <div>
 
-            <select name="User" class="w-80" required>
+            <select name="User" class="w-80 ring-1 ring-red-600" required>
                 <option value="Admin" >Self-Paced</option>
                 <option value="Student">Regular</option>
             </select>
         </div>  
 <br>
-        <div>
+        <div class="text-xl">
             Description:
         </div>   
    
-                <input type="text" placeholder="small description on the course" class="w-80 h-20" >
+                <textarea rows="3" cols="3" placeholder="small description about the course" class="w-80 ring-1 ring-red-600"></textarea>
        
        <div>
 
          <br>
-        <div>
+        <div class="text-xl" >
             
              Price:
-            </div>
+        </div>
             
             <div>
 
-                <select name="User" class="w-80" required>
+                <select name="User" class="w-80 ring-1 ring-red-600" required>
                     <option value="rupees" >Rs.5000</option>
                     <option value="rupees">Rs.10000</option>
                 </select>
             </div>  
 <br>
-            <div>
+            <div class="text-xl">
         
                 <a href="Signup"><input type="submit" value="Add course" class="w-80 rounded-xl bg-purple-600 w-28  text-white hover:bg-lime-400 hover:text-blue-900"></a>
             </div>    
