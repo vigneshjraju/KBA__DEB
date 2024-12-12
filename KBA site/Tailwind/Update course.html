@@ -4,63 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update course</title>
-</head>
-<body bgcolor="lightblue">
-    <img src="kba.jpeg" alt="kba logo" height="100" width="110">
-    <center>
-        <a href="Home.html"> Home|</a>
-        <a href="courses.html"> Courses|</a>
-        <a href="Contact us.html"> Contact us|</a>
-        <a href="Add course.html"> Add course|</a>
-        <a href="login.html"> Logout|</a>
-    </center>
 
-    <h3 align="center"><font color="violet">Update Course</font></h3>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="w-full bg-white">
+
+<div class="flex bg-white w-full">
+    <div class="w-8/12 pt-[5px] pl-[5px] pb-[5px]">
+        <img src="kba.jpeg" alt="kba logo" height="100" width="110">
+    </div>
+
+    <div class="mt-8 ml-[2px] flex gap-x-8  text-stone-800 ">
+        <a href="Home.html" class="hover:text-blue-900">Home</a>
+        <a href="courses.html" class="hover:text-blue-900">Courses</a>
+        <a href="Contact us.html" class="hover:text-blue-900">Contact us</a>
+        <a href="Add course.html" class="hover:text-blue-900">Add course</a>
+        <a href="login.html" class="hover:text-blue-900">Logout</a>
+    </div>
+</div>    
+
+    <h3>Update Course</h3>
     
 
-    <table align="center">
+    
 
-         <tr>
-            <th>Course Name</th>
-         </tr>
+        
+           Course Name
+        
 
-         <tr>
-            <td>
-                <input type="text" value="S122">
-            </td>
-
-         </tr>
-
-         <tr>
-            <th>Course Type</th>
+       
+         
+            <input type="text" value="S122">
+        
+            Course Type
 
 
-         </tr>
+         
 
-         <tr>
-            <td>
-                <select name="Type" required>
-                    <option value="Hybrid">Hybrid</option>
-                    <option value="Remote">Remote</option>
+         
+            
+            <select name="Type" required>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Remote">Remote</option>
 
-                </select>
-            </td>
+            </select>
+            
 
-            </tr>
+            
 
-         <tr>
-            <th>Description</th>
+         
+           Description
 
-         </tr>
+         
 
-          <tr>
+         
 
-            <td>
-                <textarea name="Text" rows="6" cols="21">11q</textarea>
-            </td>
-          </tr>
+          
+          11q
+           
+          
 
-          <tr>
+         
             <th>Price</th>
           </tr>
 
