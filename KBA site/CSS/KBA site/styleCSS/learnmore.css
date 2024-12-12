@@ -1,0 +1,126 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.links .lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+    
+
+}
+
+.sui {
+background-color: azure;
+width: 700px;
+height: 700px;
+margin-left: 100px;
+
+}
+
+.nui {
+color: blueviolet;
+padding-left: 25px;
+padding-top: 25px;
+}
+
+.pui{
+margin-left: 15px;
+}
+
+.pui h4{
+
+
+color: blueviolet;
+
+}
+
+.aui {
+
+padding-left: 20px;
+
+}
+
+.yui {
+padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+.zui {
+color: azure;
+background-color: blue;
+font-size: large;
+margin-right: 30px;
+margin-bottom: 30px;
+border-style: solid;
+border-radius: 25px;
+}
+
+.zui :hover{
+background-color: green;
+font-size: large;
+}
+
+.xui {
+
+color: azure;
+background-color: red;
+font-size: large;
+margin-right: 30px;
+margin-bottom: 30px;
+border-style: solid;
+border-radius: 25px;
+
+}
+
+.vui a :hover{
+
+background-color: green;
+font-size: larger;
+
+}
+
+.bow th {
+color: blueviolet;
+}
+
+.bow td {
+font-size: larger;
+color: red;
+}
+
+.tui {
+font-size: larger;
+color: azure;
+background-color: blueviolet;
+}
+
+.bow a :hover {
+
+background-color: green;
+font-size: larger;
+
+}

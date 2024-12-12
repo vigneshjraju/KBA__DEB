@@ -1,0 +1,81 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.links .lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+    
+
+}
+
+
+    .box {
+        background-color: azure;
+        width: 400px;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 253px;
+        margin-bottom: 100px;
+    }
+
+    .box th {
+        color: darkcyan;
+    }
+
+    .box .ik {
+        width: 249px;
+    }
+
+    .box .ok{
+        width: 249px;
+    }
+    
+    .box .lk {
+        width: 256px;
+        text-align: center;
+    }
+
+    .box .mk {
+        width: 256px;
+        text-align: center;
+        background-color: lightsalmon;
+        color:black
+    }
+    .box .hk {
+        color: azure;
+        background-color: blueviolet;
+        font-size: large;
+    }
+
+    .box .ek {
+        color: azure;
+        background-color: red;
+        font-size: large;
+        
+    }
+
+    .box a :hover{
+
+        background-color: green;
+        font-size: large;
+
+    }

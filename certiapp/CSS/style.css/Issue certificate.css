@@ -1,0 +1,57 @@
+.nav a {
+
+    text-decoration: none;
+    color: black;
+ }
+
+ .nav td :hover {
+    background-color: blue;
+    color: antiquewhite;
+    font-size: large;
+ }
+
+ .box {
+    background-color: azure;
+    margin-left: 50px;
+    width: 700px;
+    
+    
+ }
+
+ .box th {
+    text-align: left;
+
+ }
+
+ .grade {
+    width: 215px;
+    text-align: center;
+ }
+
+ 
+
+ .but {
+    width: 150px;
+ }
+ 
+
+ .button{
+
+    background-color: lightskyblue;
+    width: 150px;
+    color: black;
+    border-style: hidden;
+    border-radius: 5px;
+    font-size: large;
+ }
+
+ .button:hover {
+    background-color: green;
+    font-size: larger;
+ }
+
+   input{
+    width: 210px;
+ }
+
+ 

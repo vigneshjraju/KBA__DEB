@@ -1,0 +1,82 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.links .lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+    
+
+}
+
+
+    .forgot a {
+        text-decoration: none;
+        
+       
+    }
+
+
+
+    .signup a{
+        text-decoration: none;
+        color: darkmagenta;
+    }
+
+    .jo {
+        background-color: azure;
+        width: 250px;
+        height: 300px;
+        margin-top: 10px;
+        margin-left: 330px;
+        margin-bottom: 100px;
+        
+    }
+
+
+
+    .jo th{
+        color: darkcyan;
+        text-align: left;
+        
+    }
+
+    .king{
+        color: azure;
+        background-color: blueviolet;
+        font-size: large;
+    
+    }
+
+
+    .hey {
+        background-color: blueviolet;
+        font-size: large;
+        color: azure;
+    }
+    
+
+    .forgot a :hover{
+
+        background-color: green;
+        font-size: large;
+
+    }

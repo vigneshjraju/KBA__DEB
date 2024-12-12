@@ -1,0 +1,79 @@
+.box{
+
+    background-image: url('library UI.png');
+    padding-top: 30px;
+    
+
+}
+
+.nav{
+    background-color: azure;
+    width: 1610px;
+    margin-left: 10px;
+    display: flex;
+    
+
+}
+
+
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    
+    
+
+}
+
+.nav a:hover{
+    color: brown;
+} 
+
+.nav1{
+    padding-left: 1000px;
+    padding-top: 30px;
+}
+
+.nav img{
+    margin-left: 15px;
+    
+}
+
+.tables{
+    background-color: bisque;
+    width: 870px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    width: 97%;
+    border-style: solid;
+    border-radius: 15px;
+    padding-left: 1;
+}
+
+.table1{
+    width: 50%;
+    border-style:hidden ;
+    outline-style: dashed;
+
+}
+
+.select{
+    text-align: center;
+}
+
+.h1{
+    margin-left: 690px;
+    color: black;
+    background-color: bisque;
+    width: 250px;
+    text-align: center;
+}
+
+.table1 a
+{text-decoration: none;
+color: blueviolet;}
+
+.top{
+    margin-top: 30px;
+}

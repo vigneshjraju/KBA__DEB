@@ -1,0 +1,221 @@
+.background{
+    background-image: url(images/background2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    
+    
+
+}
+
+.background a{
+    text-decoration: none;
+}
+
+.vignesh{
+    background-image: url(images/2nd.png);
+    background-size: cover; 
+    background-position: center; 
+    width: 1400px;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 95px;
+    padding-top: 10px;
+    text-align: center;
+    border-style: none;
+    border-radius: 15px;
+
+}
+
+.textvignesh{
+    margin-top:100px;
+}
+
+.vignesh h4{
+    color: azure;
+    
+}
+.photo{
+    
+    position: absolute;
+    left: 120px;
+    bottom: 166px;
+    border-style: none;
+    border-radius: 15px;
+    outline-style: solid;
+    outline-color: yellow;
+
+}
+.vignesh h1{
+    font-size: xx-large;
+    
+}
+.vignesh h2{
+    color: bisque;
+    font-size: xx-large;
+}
+.portfoliolink{
+    text-decoration: none;
+    color: orange;
+}
+
+.portfoliolink a{
+    color: black;
+    font-size: larger;
+}
+
+.portfoliolink a:hover{
+    color: yellow;
+    font-size: larger;
+}
+
+.Education {
+    
+    margin-left: 150px;
+    font-size: x-large;
+}
+
+.Education table{
+    font-size: larger;
+}
+
+.Education h3{
+    margin-left: 290px;
+}
+
+.work{
+    font-size: x-large;
+}
+.work ul{
+    font-size: larger;
+}
+.work h3{
+    margin-left: 20px;
+}
+.work p{
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.digitalandlanguage{
+    
+    width: 90%;
+    display: flex;
+    margin-left: 70px;
+    font-size: x-large;
+    border-style: none;
+    border-radius: 50px;
+}
+
+.digitalskills{
+    background-image: url(images/SKILLS.jpeg);
+    border-style: none;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding-left: 120px;
+
+}
+
+.digitalskills h3{
+    background-color: black;
+    width: 320px;
+    color: greenyellow;
+    text-align: center;
+
+}
+
+.digitalskills h4{
+    background-color: black;
+    color: gold;
+    width: 200px;
+    text-align: center;
+}
+
+.digitalskills ul{
+    background-color: black;
+    color: gold;
+    font-size: large;
+    width: 240px;
+}
+
+
+.languageskills{
+    background-image: url(images/languages.png);
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    width: 50%;
+    border-style: none;
+    border-radius: 50px;
+    padding-left: 50px;
+   
+   
+}
+.languageskills h3{
+    background-color: black;
+    width: 320px;
+    color: greenyellow;
+    text-align: center;
+}
+
+.languageskills table{
+    background-color: black;
+    color: gold;
+}
+
+.languageskills th{
+    font-size: large;
+}
+.languageskills td{
+    font-size: small;
+}
+
+.languageskills p{
+    background-color: black;
+    width: 500px;
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+.additional{
+    margin-left: 200px;
+    font-size: x-large;
+}
+.Add {
+    background-image: url(images/add.png);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    margin-left: 200px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 500px;
+    font-size: large;
+    border-style: solid;
+    border-color: greenyellow;
+    border-radius: 20px;
+    
+}
+
+.Add h3{
+    color:bisque
+}
+
+.Add h4{
+    color: gold;
+}
+
+.Add p{
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.achieve{
+    padding-left: 440px;
+    font-size: larger;
+}
+
+.achieve h3{
+    margin-left: 120px;
+}

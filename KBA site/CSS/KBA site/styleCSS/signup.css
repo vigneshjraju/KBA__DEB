@@ -1,0 +1,74 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.links .lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+}
+    
+
+
+
+     .jo th {
+        color: darkcyan;
+        text-align: left;
+      
+    }
+
+    
+
+     .hi {
+        width: 180px;
+        text-align: center;
+    }
+
+    .jo h1{
+        text-align: center;
+        color: violet;
+    }
+
+
+    .jo a {
+        text-decoration: none;
+        color: darkmagenta;
+    }
+
+    .jo {
+        background-color: azure;
+        width: 250px;
+        height: 500px;
+        margin-top: 10px;
+        margin-left: 330px;
+        margin-bottom: 100px;
+    }
+
+    .cat {
+
+     background-color: blueviolet;
+     color: aliceblue;
+     font-size: large;  
+    }
+
+    .super a :hover{
+        background-color: green;
+        font-size: large;
+    }

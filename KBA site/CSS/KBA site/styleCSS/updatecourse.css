@@ -1,0 +1,67 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+  }
+    
+    
+  .box {
+    background-color: azure;
+    width: 250px;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 253px;
+        margin-bottom: 100px;
+
+ }
+
+ .box th {
+    color: darkcyan;
+    text-align: left;
+    
+ }
+
+ .ok {
+    width: 180px;
+    text-align: center;
+ }
+
+ .lk {
+    width: 180px;
+    background-color: lightsalmon;
+    color:black;
+
+ }
+
+ .mk {
+    width: 180px;
+    background-color: blueviolet;
+    color: azure;
+    font-size: large;
+ }
+     
+ .box a :hover{
+    background-color: green;
+
+ }

@@ -1,0 +1,62 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+
+}
+
+.links .lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+    
+
+}
+
+.cow {
+
+    background-color: azure;
+    width: 400px;
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: 300px;
+
+}
+
+.cow a :hover{
+
+    background-color: green;
+    font-size: large;
+
+}
+
+.cow td {
+    color: blueviolet;
+}
+
+.cow .raw{
+    color: azure;
+    background-color: blueviolet;
+    font-size: large;
+
+}
+
+.cow a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 14px;
+}

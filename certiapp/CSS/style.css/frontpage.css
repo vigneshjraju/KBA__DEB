@@ -1,0 +1,17 @@
+.nav a {
+
+    text-decoration: none;
+    color: black;
+ }
+
+ .nav td :hover {
+    background-color: blue;
+    color: antiquewhite;
+    font-size: large;
+ }
+
+ .input td{
+    border-style: solid ;
+    color: lightskyblue;
+
+ }

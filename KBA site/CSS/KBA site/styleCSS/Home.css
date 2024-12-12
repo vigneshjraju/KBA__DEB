@@ -1,0 +1,92 @@
+.links{
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0px;
+    
+
+}
+
+.lonk {
+
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+
+.links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    background-color: violet;
+    font-size: large;
+    
+
+}
+
+    .sui {
+        background-color: azure;
+        color: blueviolet;
+        
+
+    }
+
+    .kui{
+        background-color: azure;
+        color: blueviolet;
+        
+
+    }
+
+    .lui {
+
+
+        background-color: azure;
+        width: 400px;
+        height: 400px;
+        margin-left: 30px;
+
+    }
+
+    .lui a :hover{
+        background-color: green;
+        font-size: large;
+
+    }
+
+    .mui {
+
+        padding-left: 40px;
+
+    }
+
+    .oui{
+
+        color: blueviolet;
+        padding-left: 14px;
+
+    }
+
+    .nui {
+
+        background-color: blueviolet;
+        color: azure;
+        font-size: large;
+        padding-left: 14px;
+
+
+    }
+
+    
+    .rui{
+
+        background-color: blueviolet;
+        color: azure;
+        font-size: large;
+
+
+    }

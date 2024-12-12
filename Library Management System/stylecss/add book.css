@@ -1,0 +1,179 @@
+.box{
+
+    background-image: url('library UI.png');
+    height: 800px;
+    padding-top: 30px;
+    
+
+}
+
+.whole{
+  margin-left: 40px;
+}
+
+.nav{
+    background-color: azure;
+    width: 1500px;
+    margin-left: 10px;
+    display: flex;
+    
+
+}
+
+
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    
+    
+    
+
+}
+
+.nav a:hover{
+    color: brown;
+} 
+
+.nav1{
+    padding-left: 950px;
+    padding-top: 30px;
+}
+
+.nav img{
+    margin-left: 15px;
+    
+}
+
+
+
+.box1{
+  
+  
+  width: 880px;
+  font-size: large;
+  
+}
+
+.browse{
+  margin-left: 15px;
+  width: 390px;
+}
+
+.box1 h2{
+  margin-left: 50px;
+  
+}
+
+.tables{
+  
+  width: 830px;
+  margin-left: 350px;
+  
+  
+}
+.table1{
+  background-color: bisque;
+  border-style: hidden;
+  border-radius: 15px;
+  height: 150px;
+  
+  
+  
+}
+
+.table1 a{
+  text-decoration: none;
+  color: black;
+}
+
+.table1 a:hover{
+  color: green;
+  
+  
+}
+.table2{
+  background-color: bisque;
+  border-style: hidden;
+  border-radius: 15px;
+  height: 150px;
+
+}
+
+.table2 a{
+  text-decoration: none;
+  color: black;
+}
+
+.table2 a:hover{
+  color: green;
+  
+}
+
+.search{
+  width: 200px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 120px;
+  border-style: solid;
+  border-radius: 14px;
+  outline-style: solid;
+  outline-color: skyblue;
+}
+
+.enter{
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  margin-left: 23px;
+  margin-top: 125px;
+  border-style: solid;
+  border-radius: 14px;
+  outline-style: solid;
+  outline-color: skyblue;
+  
+}
+
+.enter:hover{
+  background-color: green;
+}
+
+.browseandsearch{
+  display: flex;
+  
+}
+
+.table1cart{
+display: flex;
+
+} 
+
+.cart{
+margin-left:10px;
+height: 350px;
+border-style: solid;
+border-radius: 12px;
+background-color: bisque;
+
+}
+
+
+.cart a:hover{
+background-color: bisque;
+color: brown;
+}
+
+.cart th{
+text-align: center;
+border-style: solid;
+border-radius: 15px;
+color: blueviolet;
+outline-style: dashed;
+
+}
+.cart a{
+  text-decoration: none;
+  color: olivedrab;
+  
+  
+}
