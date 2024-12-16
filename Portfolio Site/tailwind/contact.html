@@ -5,142 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-    <style>
-
-        .background{
-            background-image: url(images/background2.jpg);
-            background-size: cover; /* Ensures the image covers the entire container */
-            background-position: center; /* Centers the image */
-            
-
-        }
-        .background a{
-            text-decoration: none;
-            color: black;
-        }
-
-        .portfoliolink{
-        text-decoration: none;
-        color: orange;
-    }
-    
-    .portfoliolink a{
-        color:black;
-        font-size: larger;
-    }
-    
-    .portfoliolink a:hover{
-        color: yellow;
-        font-size: larger;
-    }
-
-
-
-
-    </style>
-    
-
-
-
-
-
-
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
  
-<body>
+<body class="bg-[url('images/background2.jpg')] bg-cover bg-center">
 
-<div class="background">
-    <h6> <marquee behavior="alternative" direction="right">Portfolio</marquee></h6>
-            <center>
-                <div class="portfoliolink">
-                    <a href="Portfolio.html"><b>PORTFOLIO</b></a>
+<div>
+            <h6>
+                <marquee behavior="alternative" direction="right">
+                    Portfolio
+                </marquee>
+            </h6>
+
+                <div class="font-bold text-lg text-center">
+                    <a href="Portfolio.html">PORTFOLIO</a>
                     <a>|</a>
-                    <a href="contact.html"><b>CONTACT</b></a>
-                    </div>
-                <h5> Contact Me</h5>
-                <h3>Have a question or want to collaborate? Fill out the form below, and I'll get back to you as soon as possible!</h3>
-                
-                <form action="">
-                <table align="center" cellspacing="10" cellpadding="1">
+                    <a href="contact.html">CONTACT</a>
+                </div>
 
-                   <tr>
-                    <th> Name:</th>
+            <div class="text-center my-24">    
+                <h5 class="text-lg font-bold text-yellow-500">
+                     Contact Me 
+                </h5>
+                <h3 class="text-xl font-bold text-red-950">
+                    Have a question or want to collaborate? Fill out the form below, and I'll get back to you as soon as possible!
+                </h3>
+            </div>
+                
+            <form action="">
+
+                <table class="border-separate  border-4 border border-slate-400 border-spacing-4 ml-[680px]">
+
+                   <tr class="text-center">
+                        <th class="text-xl font-bold"> Name:</th>
                     
                    </tr>
 
-                   <tr>
-                    <td>
-                        <input type="text" placeholder="type your name" required>
-                    </td>
+                   <tr class="text-center" >
+                        <td>
+                            <input type="text" placeholder="type your name" required>
+                        </td>
                    </tr>
 
-                   <tr>
-                    <th>
-                     User:
-                    </th>
+                   <tr class="text-center">
+                        <th class="text-xl font-bold">
+                            User:
+                        </th>
                    </tr>
 
-                   <tr>
-                    <td>
-                        <input type="radio" name="Recruiter" >Recruiter
-                        <input type="radio" name="Recruiter" >Student
-                    </td>
+                   <tr class="text-center">
+                        <td class="text-lg font-bold">
+                            <input type="radio" name="Recruiter" >Recruiter
+                            <input type="radio" name="Recruiter" >Student
+                        </td>
+           
+                        
                    </tr>
 
-                   <tr>
-                    <th>Description:</th>
+                   <tr class="text-center">
+                        <th class="text-xl font-bold">Description:</th>
+                  </tr>
+
+                   <tr class="text-center">
+                        <td>
+                            <textarea name="text" rows="5" cols="20"  required></textarea>
+                        </td>
                    </tr>
 
-                   <tr>
-                    <td>
-                        <textarea name="text" rows="5" cols="20"  required></textarea>
-                    </td></div>
-                   </tr>
-
-                   <tr>
-                    <td>
-                        <input type="submit" value="Send" required>
-                        <input type="reset">
-                    </td>
+                   <tr class="text-center">
+                        <td>
+                            <input type="submit" value="Send" required class="bg-slate-200 w-16 rounded-full hover:bg-green-500">
+                            &nbsp;&nbsp;
+                            <input type="reset" class="bg-slate-200 w-16 rounded-full hover:bg-green-500">
+                        </td>
                    </tr>
 
 
                 </table>
-             </form>
+            </form>
                 <br>
                 <br>
 
-     <h3>
-
-        <mark>"Connect with  me on social media or send us an email to stay updated and get in touch!"
-
-
-     </h3>           
      
-     <br>
-     <a href="https://www.instagram.com/vignesh_j_r"><img src="images/Instagram.png" alt="Instagram" height="80"><br>My Instagram</a>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
 
+        <p class=" text-center font-bold text-2xl"> "Connect with  me on social media or send us an email to stay updated and get in touch!"</p>
+    <br>
+    <br>
+    <br>
+
+    <div class="grid grid-cols-3">         
      
-     <a href="mailto:vigneshjraju@gmail.com"><img src="images/Gmail.png" alt="Instagram" height="60"><br>My Email</a>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
+        <div>
+            <a href="https://www.instagram.com/vignesh_j_r" class="font-bold text-xl"><img src="" alt="Instagram" class="w-[200px]"><br>My Instagram</a>
+        </div>
 
+        <div>
+            <a href="mailto:vigneshjraju@gmail.com" class="font-bold text-xl"><img src="images/email.png" alt="Instagram" class="w-[200px]" ><br>My Email</a>
+        </div>
 
-     
-     <br>
-     <a href="https://www.linkedin.com/in/vigneshjraju"><img src="images/Linkedln.png" alt=Linkedln height="80"><br>My Linkedln</a>
+        <div>
+            <a href="https://www.linkedin.com/in/vigneshjraju" class="font-bold text-xl"><img src="images/link.png" alt=Linkedln class="w-[200px]"><br>My Linkedln</a>
         
-            </center>
-</div>           
+        </div>
+    </div>           
 
     
 
