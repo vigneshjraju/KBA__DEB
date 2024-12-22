@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Add Book</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -22,7 +22,7 @@
 
                 <div class="text-lg font-bold flex gap-8 py-4">
                     <div>
-                        <a href="add book.html" class="hover:text-blue-600">Home</a>
+                        <a href="addbook.html" class="hover:text-blue-600">Home</a>
                     </div>
                    
                     <div>
@@ -52,13 +52,13 @@
                 <img src="books/Browse.png" alt="booksimage" class="w-[400px] rounded-2xl">
             </div>
 
-            <div class="flex gap-4 pt-48">
+            <div class="flex gap-4 pt-40">
                 <div>
                     <input type="search" placeholder="Search Title/Author" class="ring-2 ring-blue-200 rounded-2xl border-2	border-black">
                 </div>
 
                 <div>
-                    <input type="button" value="Search" class="ring-2 ring-blue-200 rounded-full w-20 bg-slate-100 border-2	border-black">
+                    <input type="button" value="Search" class="ring-2 ring-blue-200 rounded-full w-20 bg-slate-100 border-2	border-black hover:bg-green-600">
                 </div>
             </div>
 
@@ -67,11 +67,12 @@
 
         </div>
 
-        <div>
+    <div class="flex">
 
-            <div class="w-[800px] bg-orange-100 px-16 py-8 ml-[400px] rounded-2xl">
+            <div class="w-[800px] bg-orange-100 px-16 py-8 ml-[300px] rounded-2xl">
+
                 <div class="bg-pink-200 text-center w-40 font-bold text-xl ml-[250px]">
-                    TOP RATED BOOKS
+                    Top Rated Books
                 </div>
                 <br>
 
@@ -138,16 +139,140 @@
                             <input type="button" value=">" class="bg-green-600 rounded-full hover:bg-green-800 font-bold text-xl hover:bg-slate-100 mt-[100px] ring-1 ring-black">
                         </div>
 
-                        
+                      
                     
 
 
                 </div>
 
 
+
             </div>
 
-        </div>
+            <div class="w-[300px] bg-orange-100 px-16 py-8 rounded-2xl absolute right-[200px]">
+                <div>
+                    <p class="text-xl font-bold text-green-800 text-center">
+                        My ebook
+                    </p>
+                    <br>
+
+                     
+                        <ul class="list-decimal">        
+                            <li>
+                                <div class="px-4">
+
+                                    <img src="books/Think.png" alt="photo" class=" w-16 ">
+
+                                    <p>
+                                        <span class="text-sm font-bold">THINK AND GROW RICH</span> <br><span class="text-xs">by Napoleon HillAuthor)</span>
+                                    </p>
+
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="px-4">
+
+                                    <img src="books/alchem.png" alt="photo" class=" w-16 ">
+
+                                    <p>
+                                        <span class="text-sm font-bold">The Alchemist</span> <br><span class="text-xs">by Paulo Coelho (Author)</span>
+                                    </p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+            </div>
+    </div>
+
+
+
+            <div class="w-[800px] bg-orange-100 px-16 py-8 ml-[300px] rounded-2xl my-4">
+
+                    <div class="bg-pink-200 text-center w-40 font-bold text-xl ml-[250px]">
+                        Latest Arrivals
+                    </div>
+                        <br>
+
+                    <div class="flex gap-8">
+                            <div>
+                                <input type="button" value="<" class="bg-green-600 rounded-full hover:bg-green-800 font-bold text-xl hover:bg-slate-100 mt-[100px] ring-1 ring-black">
+                            </div>
+
+                
+                            <div>
+
+                                <button class="hover:text-green-800">
+                                    <img src="books/yogi.png" alt="s" class="w-32 ring-2 ring-black">
+                            
+                                    <p class="font-bold text-sm" >
+                                        Autobiography<br>of a Yogi
+                                    </p>
+                                </button>
+
+                            </div>
+
+
+                            <div>
+
+                                <button class="hover:text-green-800">
+                                    <img src="books/how.png" alt="s" class="w-32 ring-2 ring-black">
+                            
+                                    <p class="font-bold text-sm">
+                                        How to Become<br>a People  Magnet
+                                    </p>
+                                </button>
+
+                            </div>
+
+
+                            <div>
+
+                                <button class="hover:text-green-800">
+                                    <img src="books/how2.png" alt="s" class="w-32 ring-2 ring-black">
+                            
+                                    <p class="font-bold text-sm">
+                                        How to Win  Friends
+                                    </p>
+                                </button>
+
+                            </div>
+
+
+                            <div>
+
+                                <button class="hover:text-green-800">
+                                    <img src="books/8.png" alt="s" class="w-32 h-[190px] ring-2 ring-black">
+                            
+                                    <p class="font-bold text-sm">
+                                        30 DAYS:<br>Change your habits
+                                    </p>
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <input type="button" value=">" class="bg-green-600 rounded-full hover:bg-green-800 font-bold text-xl hover:bg-slate-100 mt-[100px] ring-1 ring-black">
+                            </div>
+
+                    
+                
+
+
+                    </div>
+
+            </div>
+
+       <footer class="bg-[url('bg-[url('books/background.png')] bg-contain bg-center')]"> 
+
+            <div>
+                >&copy;
+            </div>
+
+       </footer>     
 
 
 
