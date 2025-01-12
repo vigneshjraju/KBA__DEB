@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('books/background.png')] bg-contain bg-center">
+
+    
+    <div class="bg-slate-100">
+        <nav class="px-12 py-[2px] flex justify-between">
+            <div>
+                <img src="books/logo.png"  class="w-32">
+            </div>
+            <div class="text-lg font-bold flex gap-8 py-4">
+                <div><a href="admin1.html" class="hover:text-blue-600">Dashboard</a></div>
+                <div><a href="managebooks.html" class="hover:text-blue-600">Manage Books</a></div>
+                <div><a href="view_reports.html" class="hover:text-blue-600">Reports</a></div>
+                <div><a href="login.html" class="hover:text-blue-600">Logout</a></div>
+            </div>
+        </nav>
+    </div> 
+    
+    
+    <div class="flex gap-20 pt-8 px-12">
+        <div class=" bg-orange-100 px-16 py-8 rounded-2xl">
+            <h2 class="bg-pink-200 text-center w-40 font-bold text-xl mx-auto">Admin Dashboard</h2>
+            <br>
+            <br>
+            <br>
+            <div class="text-lg">
+                <p class="text-xl">Total Books: <span class="font-bold">800</span></p>
+                <p class="text-xl">Total Users: <span class="font-bold">450</span></p>
+                
+            </div>
+        </div>
+
+        
+        <div class="w-[800px] bg-orange-100 px-16 py-8 rounded-2xl">
+            <h2 class="bg-pink-200 text-center w-40 font-bold text-xl mx-auto">Manage Books</h2>
+            <br>
+            <div class="flex gap-8">
+
+                <div class="flex gap-8">
+                    <div>
+                        <input type="button" value="<" class="bg-green-600 rounded-full hover:bg-green-800 font-bold text-xl hover:bg-slate-100 mt-[100px] ring-1 ring-black">
+                    </div>
+
+                    
+                        <div>
+
+                            <button class="hover:text-green-800">
+                                <img src="books/subcon.png" alt="s" class="w-32 ring-2 ring-black">
+                                
+                                <p class="font-bold text-sm" >
+                                    The Power of your <br>
+                                    Subconsicous Mind
+                                </p>
+                            </button>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="hover:text-green-800">
+                                <img src="books/highly.png" alt="s" class="w-32 ring-2 ring-black">
+                                
+                                <p class="font-bold text-sm">
+                                    The 7 Habits of<br>Highly <br> Effective
+                                    People
+                                </p>
+                            </button>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="hover:text-green-800">
+                                <img src="books/harry.png" alt="s" class="w-32 ring-2 ring-black">
+                                
+                                <p class="font-bold text-sm">
+                                    Harry Potter and the <br> Philosopher's Stone
+                                </p>
+                            </button>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="hover:text-green-800">
+                                <img src="books/50.png" alt="s" class="w-32 ring-2 ring-black">
+                                
+                                <p class="font-bold text-sm">
+                                    50 Things to Realize <br> Before It's too late
+                                </p>
+                            </button>
+
+                        </div>
+
+                        <div>
+                            <input type="button" value=">" class="bg-green-600 rounded-full hover:bg-green-800 font-bold text-xl hover:bg-slate-100 mt-[100px] ring-1 ring-black">
+                        </div>
+
+                      
+                    
+
+
+                </div>
+
+
+
+            </div>
+                <div class="pl-[200px] flex gap-12">
+                    <div>
+                        <button class="hover:text-green-800 text-blue-600">
+                    
+                            <p class="font-bold text-lg text-center">Add New Book</p>
+                        </button>
+                    </div>
+
+                  
+
+                    <div>
+                        <button class="hover:text-green-800 text-blue-600">
+                    
+                            <p class="font-bold text-lg text-center">Remove Books</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    
+    <div class="w-[600px] bg-orange-100 px-16 py-8 mx-auto my-8 rounded-2xl">
+        <h2 class="bg-pink-200 text-center w-40 font-bold text-xl mx-auto">View Reports</h2>
+        <br>
+        <div class="text-lg">
+            
+            <ul class="list-disc pl-8">
+                
+                <li>
+                    <p class="font-bold">Most Borrowed Books:</p>
+                    <ul class="list-decimal pl-6">
+                        <li>The Power of Your Subconscious Mind - 230 borrows</li>
+                        <li>The 7 Habits of Highly Effective People - 180 borrows</li>
+                        <li>Harry Potter and the Philosopher's Stone - 150 borrows</li>
+                    </ul>
+                </li>
+                <br>
+                
+                <li>
+                    <p class="font-bold">User Activity:</p>
+                    <ul class="list-decimal pl-6">
+                        <li>Total Active Users This Month: 120</li>
+                        <li>New Registrations: 35</li>
+                        <li>Most Active Reader: John Doe (12 books borrowed)</li>
+                    </ul>
+                </li>
+                <br>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <footer class="bg-slate-100 bg-contain bg-center pb-4"> 
+        <div class="text-center text-xl py-8">
+            <p class="font-bold text-xl">&copy;2024 Booksphere. All rights reserved.</p>
+            <br>
+            <p class="text-violet-600">Contact us anytime between 10:00 AM & 07:00 PM on all days!</p>
+        </div>
+
+        <div class="grid grid-cols-4 gap-x-20 px-20">
+            <div>
+                <img src="books/logo.png" alt="logo" class="w-20 ml-20">
+                <p class="font-mono">
+                    JustBooks is an online books service. We have over 3 lakh books and 2 lakh happy customers. With just 3 easy steps you can become a member and start reading.
+                </p>
+            </div>
+            <div>
+                <p class="mt-4 font-bold text-lg">Our Information</p>
+                <br>
+                <p>
+                    <a href="" class="font-serif hover:text-green-800">Privacy Policy Update</a><br>
+                    <a href="" class="font-serif hover:text-green-800">Terms and Conditions</a><br>
+                    <a href="" class="font-serif hover:text-green-800">Cancellation & Refund Policy</a><br>
+                    <a href="" class="font-serif hover:text-green-800">Contact Us</a><br>
+                </p>
+            </div>
+            <div>
+                <p class="mt-4 font-bold text-lg">RESOURCES</p>
+                <br>
+                <p>
+                    <a href="" class="font-serif hover:text-green-800">FAQ</a><br>
+                    <a href="" class="font-serif hover:text-green-800">Pricing</a><br>
+                </p>
+            </div>
+            <div>
+                <p class="mt-4 font-bold text-lg">CONTACT</p>
+                <br>
+                <p>
+                    Bishop Jerome Nagar New Block, 2nd Floor, Bishop Jerome Ln,<br>
+                    Chinnakada, Kollam, Kerala 691001
+                </p>
+            </div>
+        </div>
+
+        <div class="flex gap-20 ml-[730px]">
+            <a href=""><img src="books/instagram.png" alt="logo" class="ring-2 ring-blue-200 rounded-full"></a>
+            <a href=""><img src="books/facebook.png" alt="logo" class="ring-2 ring-blue-200 rounded-full"></a>
+        </div>
+    </footer>
+</body>
+</html>
