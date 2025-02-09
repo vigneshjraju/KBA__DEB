@@ -22,19 +22,23 @@ const usermodel=model('usersignin',userSchema);
 const jobseekerSchema=new Schema({
 
     PhoneNumber:{type:Number},
-
+    
+    Photo:{type:String},
+    
     Age:{type:Number},
-
+    
     Gender: {type:String, enum:["Male", "Female"] },
-
+    
     About:{type:String},
-
+    
     Education:{type:Array},
-
+    
     Experience: {type:Array},
-
-    Skills: {type:String}
-
+    
+    Skills: {type:String},
+    
+    Resume:{type:String}
+    
     // Photo: {type:String},  // Store photo path
 
     // Resume: {type:String}  // Store resume path
@@ -48,6 +52,8 @@ const Jobseeker = usermodel.discriminator('Jobseeker', jobseekerSchema);
 const employerSchema = new Schema({
 
     CompanyName: {type:String},
+
+    Photo:{type:String},
 
     AboutCompany: {type:String},
 

@@ -2,11 +2,16 @@ import { Router } from "express";
 import dotenv from 'dotenv';
 import bcrypt from 'bcrypt';
 import jwt from "jsonwebtoken";
+import { upload } from "../middleware/upload.js";
 import {Jobseeker,Employer,usermodel} from "../Model/model.js";
 // import { upload } from "../middleware/upload.js";
 
 const user=Router();
 dotenv.config()
+
+const converttobase64=(buffer)=>{
+    return buffer.toString("base64")
+}
 
 
 user.post('/signup',async(req,res)=>{
@@ -101,7 +106,8 @@ user.post('/signup',async(req,res)=>{
 
 
 
-user.patch("/signup/details/:userId", async (req, res) => {
+user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{name:"resume",maxCount:1}]),
+ async (req, res) => {
     try {
         const { userId } = req.params;
         const { phonenumber, age, gender, about, education, experience, skills, companyname, aboutcompany, location,totaljobs,since } = req.body;
@@ -114,6 +120,17 @@ user.patch("/signup/details/:userId", async (req, res) => {
   
         // Update user details based on role
         if (user1.Role === "Jobseeker") {
+
+            let image1=null;
+            let file1=null;
+
+            if(req.files && req.files["photo"]){
+                image1=converttobase64(req.files["photo"][0].buffer)
+            }
+            if(req.files && req.files["resume"]){
+                file1=converttobase64(req.files["resume"][0].buffer)
+            }
+
             await Jobseeker.findByIdAndUpdate(
                 userId,
                 {
@@ -125,6 +142,8 @@ user.patch("/signup/details/:userId", async (req, res) => {
                         Education: education, // Ensure embedded objects are stored
                         Experience: experience,
                         Skills: skills,
+                        Photo:image1,
+                        Resume:file1
                         
                     }
                 },
@@ -134,6 +153,15 @@ user.patch("/signup/details/:userId", async (req, res) => {
         } 
         
         else if (user1.Role === "Employer") {
+
+            let image1=null;
+            
+
+            if(req.files && req.files["photo"]){
+                image1=converttobase64(req.files["photo"][0].buffer)
+            }
+
+
             await Employer.findByIdAndUpdate(
                 userId,
                 {
@@ -143,7 +171,8 @@ user.patch("/signup/details/:userId", async (req, res) => {
                         Location: location,
                         TotalJobs: totaljobs,
                         Location: location,
-                        Since:since
+                        Since:since,
+                        Photo:image1
                     }
                 },
                 { new: true }
