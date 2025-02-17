@@ -12,7 +12,7 @@ dotenv.config();
 
 const PORT=process.env.PORT
 
-sphere.use(json())
+sphere.use(json())// json() is a middleware 
 sphere.use("/",user)
 sphere.use("/",employer)
 sphere.use("/",jobseeker)
@@ -28,12 +28,8 @@ sphere.listen(PORT,()=>{
 })
 
 mongoose.connect('mongodb://localhost:27017/Jobportal').then(()=>{
-    try{
-        console.log("MongoDB connected successfully to Jobportal");
-        
-    }
-    catch{
-        console.log("MongoDB failed to connect to Jobportal");
-        
-    }
-})
+    console.log("MongoDB connected successfully to Jobportal");
+    })
+    .catch((error) => {
+        console.error("MongoDB failed to connect to Jobportal:", error);
+    });

@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt';
 import jwt from "jsonwebtoken";
 import { upload } from "../middleware/upload.js";
 import {Jobseeker,Employer,usermodel} from "../Model/model.js";
-// import { upload } from "../middleware/upload.js";
+
 
 const user=Router();
 dotenv.config()
@@ -65,7 +65,7 @@ user.post('/signup',async(req,res)=>{
 
                                 } 
                                 else {
-                                    return res.status(400).send('Invalid user role.');
+                                     res.status(400).send('Invalid user role.');
                                 }
 
                             console.log(newUser);
@@ -73,16 +73,6 @@ user.post('/signup',async(req,res)=>{
                              
                             res.status(201).json({ message: "User registered successfully", userId: newUser._id,role: newUser.Role});
                             
-                            // const newUser =new usermodel({
-
-                            //     Email:email,
-                            //     Password:newpassword,
-                            //     PhoneNumber:phonenumber,
-                            //     Age:age,
-                            //     Gender:gender,
-                            //     Address:ad// Save user and respond
-
-
                         }
 
 
@@ -112,13 +102,13 @@ user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{n
         const { userId } = req.params;
         const { phonenumber, age, gender, about, education, experience, skills, companyname, aboutcompany, location,totaljobs,since } = req.body;
 
-        // Find user by ID
+        
         let user1 = await usermodel.findById(userId);
         if (!user1) {
             return res.status(404).json({ message: "User not found" });
         }
   
-        // Update user details based on role
+        
         if (user1.Role === "Jobseeker") {
 
             let image1=null;
@@ -139,7 +129,7 @@ user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{n
                         Age: age,
                         Gender: gender,
                         About: about,
-                        Education: education, // Ensure embedded objects are stored
+                        Education: education, 
                         Experience: experience,
                         Skills: skills,
                         Photo:image1,
@@ -147,7 +137,7 @@ user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{n
                         
                     }
                 },
-                { new: true }  // Return updated document
+                { new: true }  
             );
             res.status(200).json({ message: "Jobseeker details updated successfully" });
         } 
@@ -196,23 +186,23 @@ user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{n
 
         const {email,password}=req.body;
 
-        // Check if email exists in any model (Jobseeker or Employer)
+        
     let user = await Jobseeker.findOne({ Email: email });
     if (!user) {
       user= await Employer.findOne({ Email: email });
     }
 
     if (!user) {
-      return res.status(404).json({ message: "User not found. Please sign up." });
+       res.status(404).json({ message: "User not found. Please sign up." });
     }
 
-    //Compare passwords
+    
     const passwordmatch = await bcrypt.compare(password, user.Password);
     if (!passwordmatch) {
-      return res.status(400).json({ message: "Invalid credentials" });
+       res.status(400).json({ message: "Invalid credentials" });
     }
     else{
-        //Generate JWT token
+        
         const token = jwt.sign({ userId: user._id, role: user.Role },process.env.SECRET_KEY,{ expiresIn: "7d" });
 
         res.cookie('authToken',token,
@@ -220,7 +210,7 @@ user.patch("/signup/details/:userId",upload.fields([{name:"photo",maxCount:1},{n
                  httpOnly:true
             });
 
-    //Return user details & token
+    
     res.status(200).json({message: "Login successful",userId: user._id,role: user.Role,token: token,});
     console.log(token);
     }

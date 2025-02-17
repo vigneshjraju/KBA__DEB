@@ -4,8 +4,8 @@ import { model } from "mongoose" ;
 
 const userSchema=new Schema({
 
-    Email:{type:String,},
-    Password:{type:String,},
+    Email:{type:String},
+    Password:{type:String},
     Address:{type:String},
     Role:{type:String,enum:["Jobseeker","Employer"],}
 
@@ -18,7 +18,7 @@ const userSchema=new Schema({
 const usermodel=model('usersignin',userSchema);
 
 
-// Jobseeker Schema
+
 const jobseekerSchema=new Schema({
 
     PhoneNumber:{type:Number},
@@ -39,16 +39,13 @@ const jobseekerSchema=new Schema({
     
     Resume:{type:String}
     
-    // Photo: {type:String},  // Store photo path
-
-    // Resume: {type:String}  // Store resume path
 
 },{ _id: false })
 
 const Jobseeker = usermodel.discriminator('Jobseeker', jobseekerSchema);
 
 
-// Employer Schema
+
 const employerSchema = new Schema({
 
     CompanyName: {type:String},

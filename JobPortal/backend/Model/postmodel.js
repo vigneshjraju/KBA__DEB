@@ -14,8 +14,8 @@ const jobschema=new Schema({
     JobDescription: { type: String },
     Responsibilities: { type: String },
     Requirements: { type: String },
-    PostedBy: { type:Schema.Types.ObjectId, ref: "usersignin", required: true }, // Employer reference
-    Applicants: [{ type:Schema.Types.ObjectId, ref: "usersignin", required: true }] // List of jobseeker IDs
+    PostedBy: { type:Schema.Types.ObjectId, ref: "usersignin", required: true }, 
+    Applicants: [{ type:Schema.Types.ObjectId, ref: "usersignin", required: true }] 
 
     },
     {

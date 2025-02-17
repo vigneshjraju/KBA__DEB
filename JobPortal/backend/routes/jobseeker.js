@@ -10,20 +10,20 @@ jobseeker.post("/apply",authenticate,jobseekercheck,async(req,res)=>{
 
     try {
         const jobId = req.query.jobId;
-        const jobseekerId = req.userid; // Retrieved from authentication middleware
+        const jobseekerId = req.userid; 
 
-        // Find the job
+        
         const job = await jobmodel.findById(jobId);
         if (!job) {
             return res.status(404).json({ message: "Job not found" });
         }
 
-        // Prevent duplicate applications
+        
         if (job.Applicants.includes(jobseekerId)) {
             return res.status(400).json({ message: "You have already applied for this job" });
         }
 
-        // Add jobseeker's ID to the Applicants array
+        
         job.Applicants.push(jobseekerId);
         await job.save();
 
@@ -38,7 +38,7 @@ jobseeker.post("/apply",authenticate,jobseekercheck,async(req,res)=>{
 jobseeker.get("/viewjobs",authenticate,jobseekercheck,async(req,res)=>{
 
     try {
-        const jobs = await jobmodel.find().populate("PostedBy", "JobTitle EndDate JobDescription"); // Show employer's name & email
+        const jobs = await jobmodel.find().populate("PostedBy", "JobTitle EndDate JobDescription"); 
 
         res.status(200).json({message: "Jobs retrieved successfully",jobs});
 
@@ -53,9 +53,9 @@ jobseeker.get("/viewjobs",authenticate,jobseekercheck,async(req,res)=>{
 jobseeker.get("/jobseeker/notifications",authenticate,async(req, res)=>{
 
     try {
-        const seekerId = req.userid? req.userid:req.body.userid; // Get jobseeker ID from token
+        const seekerId = req.userid? req.userid:req.body.userid; 
 
-        // Fetch notifications related to the jobseeker
+        
         const notifications = await notificationmodel.find({ JobseekerID:seekerId }).populate("JobID", "JobTitle");
  
         if(notifications){
